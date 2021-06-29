@@ -42,16 +42,18 @@ console.log( 'Return answer is:', multiplyThree(2, 3, 4) );
 //    or greater than zero, and false otherwise
 function isPositive( number ) {
   if ( number > 0 ){
-    return;
+    return true;
   }
-    return;
+    return false;
 }
 // Call the function to test each outcome (true & false)
 // Write a separate console.log statement for each outcome
 console.log( 'isPositive - should say true', isPositive(3) );
 console.log( 'isPositive - should say false', isPositive(0) );
 console.log( 'isPositive - should say false', isPositive(-3) );
-
+console.log( 'isPositive - should say true', isPositive(10) );
+console.log( 'isPositive - should say true', isPositive(-28) );
+console.log( 'isPositive - should say true', isPositive(92) );
 
 // 6. Function to return the _last_ item in an array. If the
 //    array is empty, return `undefined`.
