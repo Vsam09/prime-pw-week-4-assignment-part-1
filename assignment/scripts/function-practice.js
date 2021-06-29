@@ -31,8 +31,8 @@ console.log( 'Return answer is:', addNumbers() );
 // 4. Function to multiply three numbers & return the result
 function multiplyThree( num0, num1, num2){
 console.log( `multiply three numbers ${num0}, ${num1} and ${num2}` );
-let answer = num0 * num1 * num2;
-return answer;
+  let answer = num0 * num1 * num2;
+    return answer;
 }
 console.log( 'Return answer is:', multiplyThree(2, 3, 4) );
 
@@ -70,8 +70,15 @@ console.log( 'Last item in array is', getLast() );
 //    value is found and false otherwise. Use a loop;
 //    DO NOT use Array.includes, Array.indexOf, or Array.find
 function find( value, array ){
-
+    let shoes = [ '10', '9', '8', '7', '6', '5']
+    if ( value && array == shoes.length ){
+    return true;
+  }
+    else{
+    return false;
+  }
 }
+console.log( 'Shoe size. shoes', find( ) );
 
 // ----------------------
 // Stretch Goals
