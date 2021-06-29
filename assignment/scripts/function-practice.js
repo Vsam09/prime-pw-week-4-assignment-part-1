@@ -21,17 +21,16 @@ function helloName ( name ) {
 console.log( 'Hello', helloName());
 
 // 3. Function to add two numbers together & return the result
-function addNumbers( num0, num1 ) {
-  console.log( 'in addNumbers');
-  let answer = num0 + num1;
-    return answer;
-  // return firstNumber + secondNumber;
-  }
-console.log( 'Return answer is:', addNumbers(21,12) );
+function addNumbers( firstNumber) {
+  console.log( 'Adding two numbers: 21 + 12');
+  let answer = 21 + 12;
+  return answer;
+}
+console.log( 'Return answer is:', addNumbers() );
 
 // 4. Function to multiply three numbers & return the result
 function multiplyThree( num0, num1, num2){
-console.log( 'multiplyThree', num0, num1, num2);
+console.log( `multiply three numbers ${num0}, ${num1} and ${num2}` );
 let answer = num0 * num1 * num2;
 return answer;
 }
