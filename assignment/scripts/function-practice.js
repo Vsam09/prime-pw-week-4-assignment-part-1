@@ -58,8 +58,14 @@ console.log( 'isPositive - should say true', isPositive(92) );
 // 6. Function to return the _last_ item in an array. If the
 //    array is empty, return `undefined`.
 function getLast( array ) {
-
+  let color = [ 'blue', 'green', 'red', 'orange'];
+  if (color == color.length-1) {
+  return true;
 }
+  return false;
+}
+
+console.log( 'Last time in array is', getLast [ 3 ]);
 
 // 7. Function to find a value in an array. Return true if the
 //    value is found and false otherwise. Use a loop;
