@@ -71,10 +71,10 @@ console.log( 'Last item in array is', getLast() );
 //    DO NOT use Array.includes, Array.indexOf, or Array.find
 function find( value, array ){
     let shoes = [ '10', '9', '8', '7', '6', '5']
-    if ( value && array == shoes.length ){
+    if ( value == shoes.length ){
     return true;
   }
-    else{
+    else if( value != shoes ){
     return false;
   }
 }
