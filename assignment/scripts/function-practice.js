@@ -70,15 +70,13 @@ console.log( 'Last item in array is', getLast() );
 //    value is found and false otherwise. Use a loop;
 //    DO NOT use Array.includes, Array.indexOf, or Array.find
 function find( value, array ){
-    let shoes = [ '10', '9', '8', '7', '6', '5']
-    if ( value == shoes.length ){
+    for (let i=0; i<array.length; i++ )
+    if (array [ i ] === value ){
     return true;
   }
-    else if( value != shoes ){
     return false;
-  }
 }
-console.log( 'Shoe size. shoes', find( ) );
+console.log( 'Value found in array is true', find( 7, [ 10,9,8,7,6,5 ] ) );
 
 // ----------------------
 // Stretch Goals
