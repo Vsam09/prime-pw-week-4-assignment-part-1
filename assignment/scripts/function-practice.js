@@ -21,18 +21,18 @@ function helloName ( name ) {
 console.log( 'Hello', helloName());
 
 // 3. Function to add two numbers together & return the result
-function addNumbers( firstNumber) {
-  console.log( 'Adding two numbers: 21 + 12');
-  let answer = 21 + 12;
+function addNumbers( num0, num1) {
+console.log( `Adding two numbers ${num0}, ${num1}`);
+  let answer = num0 + num1;
   return answer;
 }
-console.log( 'Return answer is:', addNumbers() );
+console.log( 'Return answer is:', addNumbers( 21, 12) );
 
 // 4. Function to multiply three numbers & return the result
 function multiplyThree( num0, num1, num2){
 console.log( `multiply three numbers ${num0}, ${num1} and ${num2}` );
   let answer = num0 * num1 * num2;
-    return answer;
+  return answer;
 }
 console.log( 'Return answer is:', multiplyThree(2, 3, 4) );
 
@@ -43,7 +43,7 @@ console.log( 'Return answer is:', multiplyThree(2, 3, 4) );
 function isPositive( number ) {
   if ( number > 0 ){
     return true;
-  }
+}
     return false;
 }
 // Call the function to test each outcome (true & false)
@@ -73,7 +73,7 @@ function find( value, array ){
     for (let i=0; i<array.length; i++ )
     if (array [ i ] === value ){
     return true;
-  }
+}
     return false;
 }
 console.log( 'Value found in array is true', find( 7, [ 10,9,8,7,6,5 ] ) );
@@ -84,7 +84,11 @@ console.log( 'Value found in array is true', find( 7, [ 10,9,8,7,6,5 ] ) );
 // 8. Function to check if a letter is the first letter in a
 //    string. Return true if it is, and false otherwise
 function isFirstLetter(letter, string) {
-
+  for (let i=0; i<string.length; i++ )
+  if (string [ i ] == letter ){
+  return true;
+}
+  return false;
 }
 console.log( 'isFirstLetter - should say true', isFirstLetter('a', 'apple') );
 console.log( 'isFirstLetter - should say false', isFirstLetter('z', 'apple') );
